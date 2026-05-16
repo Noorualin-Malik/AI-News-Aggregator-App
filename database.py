@@ -1,4 +1,8 @@
 import sqlite3
+import os
+
+# create folder safely (important for Streamlit Cloud)
+os.makedirs("data", exist_ok=True)
 
 DB_NAME = "data/leads.db"
 
